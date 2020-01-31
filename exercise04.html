@@ -78,13 +78,13 @@
         <p> </p>
         <p>We found out that the button may "push" many times if you press it, and that is one problem that we needed to solve in order to make the light shine as we wanted it to. In order to do that, we added a "delay(500)" in middle of the code. That will hlep the light to do that because it will stop for 500 miniseconds before another "push" began, so it will be slower and better for us to use it. This problem caused us to think carefully before doing another program. Sometimes your code is right, but it can't connect to what you want.</p>
      <p class="pic">
-        <img src="coding12.21.PNG" width="400">
+        <img src="coding12.21.png" width="400">
      <p class="pic">
-        <img src="light.PNG" width="400">
+        <img src="light.png" width="400">
          <h1>Project 1</h1>
         <p>Today we made a more complex project. I found a water vapor detector, and I coded it so it can detect the water vapor around up, and show it on the screen. Not only that, I added a little lightbulb that shines when the water vapor reaches 500. it the water vapor is low, it doesn't do anything. I found that the projects like this are very useful in real life, and we can do little things to help us. </p>
         <p>this is my code:</p>
-        <p>int LED = 13;
+        <pre>int LED = 13;
 int val = 0;
 void setup() {
 Serial.begin(9600);
@@ -99,13 +99,13 @@ val = analogRead(A2);
 if (val>500){
   digitalWrite(LED,HIGH);
 }
-if (val<500) 
+if (val<500) {
   digitalWrite(LED,LOW);
-
+}
 Serial.println(val);
-delay(100);
-</p>
-        <p>I also made a project in which you can move the robotic arm using a sensor. This picture shows he output.</p>
+delay(100);}
+</pre>
+        <p>I also made a project in which you can move the robotic arm using a sensor. This picture shows the output.</p>
         <p class="pic">
         <img src="thing.JPG" width="400">
         
