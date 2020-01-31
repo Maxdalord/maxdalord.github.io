@@ -83,6 +83,31 @@
         <img src="light.PNG" width="400">
          <h1>Project 1</h1>
         <p>Today we made a more complex project. I found a water vapor detector, and I coded it so it can detect the water vapor around up, and show it on the screen. Not only that, I added a little lightbulb that shines when the water vapor reaches 500. it the water vapor is low, it doesn't do anything. I found that the projects like this are very useful in real life, and we can do little things to help us. </p>
+        <p>this is my code:</p>
+        <p>int LED = 13;
+int val = 0;
+void setup() {
+Serial.begin(9600);
+Serial.println("Max is awesome!");
+  // put your setup code here, 1to run once:
+  pinMode(LED,OUTPUT);
+}
+void loop() {
+  // put your main code here, to run repeatedly:
+  //digitalWrite(LED,HIGH);
+val = analogRead(A2);
+if (val>500){
+  digitalWrite(LED,HIGH);
+}
+if (val<500) 
+  digitalWrite(LED,LOW);
+
+Serial.println(val);
+delay(100);
+</p>
+        <p>I also made a project in which you can move the robotic arm using a sensor. This picture shows he output.</p>
+        <p class="pic">
+        <img src="thing.JPG" width="400">
         
                                                                                                                         
                                                                                                                         
